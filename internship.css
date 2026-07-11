@@ -1,0 +1,104 @@
+/* ====================================
+   HASIVERSE INTERNSHIPS
+==================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+    padding:50px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.container h1{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:40px;
+    font-size:42px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(37,99,235,.18);
+}
+
+.card h2{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.card h3{
+    color:#111827;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#64748b;
+    margin:10px 0;
+    line-height:1.6;
+}
+
+.card button{
+    margin-top:20px;
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#1d4ed8;
+}
+
+@media(max-width:768px){
+
+.container h1{
+    font-size:32px;
+}
+
+}
+.apply-btn{
+    display:block;
+    text-align:center;
+    margin-top:20px;
+    padding:15px;
+    border-radius:12px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.apply-btn:hover{
+    background:#1d4ed8;
+}

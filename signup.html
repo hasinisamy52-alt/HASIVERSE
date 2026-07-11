@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | HasiVerse</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/signup.css') }}">
+
+</head>
+
+<body>
+
+<div class="signup-container">
+
+    <!-- LEFT -->
+
+    <div class="left-side">
+
+        <img src="{{ url_for('static', filename='image/hv-logo.png') }}"
+             alt="HasiVerse Logo">
+
+        <h1>Create Your Account</h1>
+
+        <p>
+
+            Join HasiVerse and start learning,
+            building projects and getting placement ready.
+
+        </p>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="right-side">
+
+        <form method="POST"
+              action="/signup">
+
+            <h2>Create Account</h2>
+
+            {% if error %}
+
+            <div class="error-message">
+
+                {{ error }}
+
+            </div>
+
+            {% endif %}
+
+            <input type="text"
+                   name="fullname"
+                   placeholder="Full Name"
+                   required>
+
+            <input type="email"
+                   name="email"
+                   placeholder="Email Address"
+                   required>
+
+            <input type="password"
+                   name="password"
+                   placeholder="Password"
+                   required>
+
+            <input type="password"
+                   name="confirm_password"
+                   placeholder="Confirm Password"
+                   required>
+
+            <button type="submit">
+
+                Create Account
+
+            </button>
+
+            <p>
+
+                Already have an account?
+
+                <a href="/login">
+
+                    Login
+
+                </a>
+
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

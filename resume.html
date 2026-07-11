@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume Builder | HasiVerse</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/resume.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="resume-container">
+
+    <div class="resume-header">
+
+        <h1>📄 AI Resume Builder</h1>
+
+        <p>Create your professional ATS-friendly resume in minutes.</p>
+
+    </div>
+
+    <form method="POST">
+
+        <div class="grid">
+
+            <input
+                type="text"
+                name="fullname"
+                placeholder="Full Name"
+                required>
+
+            <input
+                type="text"
+                name="phone"
+                placeholder="Phone Number"
+                required>
+
+            <input
+                type="text"
+                name="address"
+                placeholder="Address"
+                required>
+
+            <input
+                type="text"
+                name="college"
+                placeholder="College Name"
+                required>
+
+            <input
+                type="text"
+                name="degree"
+                placeholder="Degree"
+                required>
+
+            <input
+                type="text"
+                name="cgpa"
+                placeholder="CGPA">
+
+        </div>
+
+        <textarea
+            name="objective"
+            placeholder="Career Objective"
+            rows="4"
+            required></textarea>
+
+        <textarea
+            name="skills"
+            placeholder="Skills (Comma Separated)"
+            rows="4"
+            required></textarea>
+
+        <textarea
+            name="projects"
+            placeholder="Projects"
+            rows="5"
+            required></textarea>
+
+        <textarea
+            name="certificates"
+            placeholder="Certificates"
+            rows="5"></textarea>
+
+        <button type="submit">
+
+            Generate Resume 🚀
+
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>

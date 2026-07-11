@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>My Resumes</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/my_resumes.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📄 My Resume History</h1>
+
+<table>
+
+<tr>
+
+<th>Name</th>
+
+<th>College</th>
+
+<th>Degree</th>
+
+<th>CGPA</th>
+
+</tr>
+
+{% for resume in resumes %}
+
+<tr>
+
+<td>{{ resume.fullname }}</td>
+
+<td>{{ resume.college }}</td>
+
+<td>{{ resume.degree }}</td>
+
+<td>{{ resume.cgpa }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+
+</html>

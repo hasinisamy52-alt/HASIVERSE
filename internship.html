@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Internships | HasiVerse</title>
+
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/internships.css') }}">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>💼 Internship Opportunities</h1>
+
+
+<p class="subtitle">
+Find internships and start your career journey.
+</p>
+
+
+
+<div class="cards">
+
+
+{% for internship in internships %}
+
+
+<div class="card">
+
+
+<h2>
+{{ internship.company }}
+</h2>
+
+
+<h3>
+{{ internship.role }}
+</h3>
+
+
+<p>
+📍 {{ internship.location }}
+</p>
+
+
+<p>
+⏳ {{ internship.duration }}
+</p>
+
+
+<p>
+🛠 {{ internship.skills }}
+</p>
+
+
+
+<a href="/apply/{{ internship.id }}" class="apply-btn">
+    Apply Now
+</a>
+class="apply-btn">
+
+Apply Now
+
+</a>
+
+
+</div>
+
+
+{% endfor %}
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+
+</html>

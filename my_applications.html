@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>My Applications</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/my_applications.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💼 My Applications</h1>
+
+<table>
+
+<tr>
+
+<th>Company</th>
+
+<th>Role</th>
+
+<th>Location</th>
+
+<th>Duration</th>
+
+<th>Applied On</th>
+
+</tr>
+
+{% for app in applications %}
+
+<tr>
+
+<td>{{ app.company }}</td>
+
+<td>{{ app.role }}</td>
+
+<td>{{ app.location }}</td>
+
+<td>{{ app.duration }}</td>
+
+<td>{{ app.applied_on }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+
+</html>

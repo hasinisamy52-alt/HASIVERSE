@@ -1,0 +1,178 @@
+/* ====================================
+   HASIVERSE RESUME PREVIEW
+==================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#eef2ff;
+
+    padding:50px 20px;
+
+}
+
+.resume-preview{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:50px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.top{
+
+    text-align:center;
+
+    border-bottom:2px solid #2563eb;
+
+    padding-bottom:25px;
+
+    margin-bottom:35px;
+
+}
+
+.top h1{
+
+    color:#2563eb;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.top p{
+
+    color:#64748b;
+
+    margin:6px 0;
+
+}
+
+.section{
+
+    margin-bottom:30px;
+
+}
+
+.section h2{
+
+    color:#2563eb;
+
+    margin-bottom:12px;
+
+    border-left:5px solid #2563eb;
+
+    padding-left:10px;
+
+}
+
+.section p{
+
+    color:#374151;
+
+    line-height:1.8;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin-top:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.download-btn,
+.back-btn{
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.download-btn{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+.download-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+}
+
+.back-btn{
+
+    background:#e5e7eb;
+
+    color:#111827;
+
+}
+
+.back-btn:hover{
+
+    background:#d1d5db;
+
+}
+
+@media(max-width:768px){
+
+.resume-preview{
+
+padding:30px 20px;
+
+}
+
+.top h1{
+
+font-size:32px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+.download-btn,
+.back-btn{
+
+text-align:center;
+
+}
+
+}
